@@ -10,8 +10,8 @@ const decoration = document.getElementById("decoration");
 function menuOpen(){
     /*Open*/
     if(menuMiddle.style.opacity != "0"){ 
-        console.log("Test-open");
         menuTop.style.animationName = "menu-animation-top";
+        menuMiddle.style.animationName = "menu-animation-middle";
         menuBottom.style.animationName = "menu-animation-bottom";
         menuMiddle.style.opacity = "0";
         navSmall.style.display = "block";
@@ -19,9 +19,9 @@ function menuOpen(){
         
     /*Closed*/
     }else{
-        console.log("Test-close");
         menuMiddle.style.opacity = "1"; 
         menuTop.style.animationName = "menu-animation-top-reverse";
+        menuMiddle.style.animationName = "menu-animation-middle-reverse";
         menuBottom.style.animationName = "menu-animation-bottom-reverse";
         navSmall.style.display = "none";
         console.log("Closed");

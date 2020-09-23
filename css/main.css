@@ -67,6 +67,11 @@ header{
     animation-fill-mode: forwards;  
 }
 
+.menu-middle{
+    animation-duration: .5s;
+    animation-fill-mode: forwards;  
+}
+
 .navigation{
     display: inline-block;
 }
@@ -317,11 +322,13 @@ footer p{
 @media (max-width: 470px){
     .middle-section h1{
         margin-top: 3em;
+    
     }
 }
+
 @media (max-height: 800px){
     .graphical-elements div{
-        margin: -11.3em;
+        margin: -12em;
     }
 
     .middle-section h1{
@@ -423,5 +430,23 @@ footer p{
     }
     to{
         transform: rotate(0deg);
+    }
+}
+
+@keyframes menu-animation-middle{
+    from{
+        width: 30px
+    }
+    to{
+        width: 0px
+    }
+}
+
+@keyframes menu-animation-middle-reverse{
+    from{
+        width:0px
+    }
+    to{
+        width:30px
     }
 }
