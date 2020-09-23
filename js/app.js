@@ -5,9 +5,6 @@ const menuMiddle = document.getElementById("menu-middle");
 const menuBottom = document.getElementById("menu-bottom");
 const decoration = document.getElementById("decoration");
 
-console.log("test);
-            menu.style.backgroundColor = "red";
-
 
 function menuOpen(){
     /*Open*/
