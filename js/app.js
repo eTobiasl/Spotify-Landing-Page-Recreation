@@ -16,6 +16,7 @@ function menuOpen(){
         menuMiddle.style.opacity = "0";
         navSmall.style.display = "block";
         console.log("Open");
+        menuBottom.style.backgroundColor = "red";
         
     /*Closed*/
     }else{
