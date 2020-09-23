@@ -10,6 +10,7 @@ const decoration = document.getElementById("decoration");
 function menuOpen(){
     /*Open*/
     if(menuMiddle.style.opacity != "0"){ 
+        console.log("Test-open");
         menuTop.style.animationName = "menu-animation-top";
         menuBottom.style.animationName = "menu-animation-bottom";
         menuMiddle.style.opacity = "0";
@@ -19,6 +20,7 @@ function menuOpen(){
         
     /*Closed*/
     }else{
+        console.log("Test-close");
         menuMiddle.style.opacity = "1"; 
         menuTop.style.animationName = "menu-animation-top-reverse";
         menuBottom.style.animationName = "menu-animation-bottom-reverse";
