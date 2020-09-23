@@ -4,6 +4,7 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: black;
+    overflow: "scoll";
 }
 
 /*Top section & navigation */ 
@@ -52,6 +53,7 @@ header{
     color: #1BD760;
 }
 
+
 .menu{
     display: none;
 }
@@ -66,9 +68,17 @@ header{
     animation-fill-mode: forwards;  
 }
 
-/*Navigation & middle section*/
+.navigation{
+    display: inline-block;
+}
 
+.decoration{
+    content: "|";
+}
 
+.menu-small{
+    display: none;
+}
 
 /*Middle section*/ 
 
@@ -190,6 +200,12 @@ footer p{
 
 /*Media querries*/
 
+@media (min-width: 900px){
+    .menu-small li{
+        display: none;
+    }
+}
+
 @media (max-width: 1400px){
     .graphical-elements div{
         margin: -7em;
@@ -207,22 +223,38 @@ footer p{
         margin-left: 0;
         margin-top: 2em;
         margin-bottom: 1em;
-        
     }
+
 
     .middle-section span{
         margin-right: 0;
     }
 
     @media (max-width: 900px){
-
         .navigation li{
-            margin: 0 0 .4em 0;
-            display: block;
+            margin: 0 0 1em 0;
+            display: block; 
         }
 
-        #nav-list{
+       .nav-menu{
             display: none;
+        }
+
+        .menu-small{
+            display: none;
+            position: absolute;
+            background-color: black;
+            right: 0;
+            padding-right:4em;
+            height: 30em;
+            font-size: xx-large;
+            top:1.4em;
+            text-align: left;
+            width: 30%;
+        }
+
+        .nav-menu li:first-of-type{
+            margin-top:2em;
         }
 
         .menu div{
@@ -248,6 +280,10 @@ footer p{
 
         .menu:focus{
             outline: none;
+        }
+
+        #nav-menu{
+            transition-duration: 5s;
         }
 
         .flex-header{
@@ -282,6 +318,7 @@ footer p{
 
 /*Keyframes*/
 
+/*Responsive hamburger menu */
 @keyframes menu-animation-top{
     from{
         transform: rotate(0deg);
