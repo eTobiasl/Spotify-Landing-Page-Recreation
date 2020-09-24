@@ -15,7 +15,7 @@ function menuOpen(){
         menuBottom.style.animationName = "menu-animation-bottom";
         menuMiddle.style.opacity = "0";
         navSmall.style.display = "block";
-        console.log("Open");
+        document.body.style.overflow = "hidden";
         
     /*Closed*/
     }else{
@@ -24,7 +24,7 @@ function menuOpen(){
         menuMiddle.style.animationName = "menu-animation-middle-reverse";
         menuBottom.style.animationName = "menu-animation-bottom-reverse";
         navSmall.style.display = "none";
-        console.log("Closed");
+        document.body.style.overflow = "scroll";
     }
 }
 
