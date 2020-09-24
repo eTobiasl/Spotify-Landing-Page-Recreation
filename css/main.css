@@ -6,6 +6,7 @@ body{
     background-color: black;
 }
 
+
 /*Top section & navigation */ 
 
 .flex-header{
@@ -25,11 +26,21 @@ header{
 }
 
 .logo-picture{
+    clip-path: circle(47.9% at 50% 50%);
     position: absolute;
     left: 2em;
-    width: 130px;
-    height: 40px;
+    width: 60px;
+    height: 45px;
 }
+
+.logo-text{
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    left: 7em;
+    top: 1.3em;
+}
+
 
 .navigation{
     color: white;
@@ -48,7 +59,7 @@ header{
 }
 
 .navigation a:hover, .navigation a:focus{
-    color: #1BD760;
+    color: #354db9;
 }
 
 
@@ -91,8 +102,8 @@ header{
 
 .middle-section{
     overflow: hidden;
-    background-color: #2C46B9;
-    color: #1BD760;
+    background-color: #1a296d;
+    color: #f1f6fd;
     margin-top: 0;
     position: absolute;
     padding-bottom: 15em;
@@ -120,11 +131,10 @@ header{
     margin-top: -4em;
 }
 
-.free-button{
-    text-transform: uppercase;
+.portfolio-button{
     text-decoration: none;
-    color: #2C46B9;
-    background-color: #1BD760;
+    color: #f1f6fd;
+    background-color: #000000;
     padding: 1em 3em 1em 3em;
     border-radius: 100px;
     font-weight: bold;
@@ -132,8 +142,8 @@ header{
 }
 
 
-.free-button:hover, .free-button:focus{
-    background-color: white;
+.portfolio-button:hover, .portfolio-button:focus{
+    background-color: #354db9;
     outline: none;
 }
 
@@ -143,8 +153,8 @@ header{
 
 .circle-big-left, .circle-big-right, .circle-small-left,
 .circle-small-right{
-    box-shadow: 20px -7px #0d8037;
-    background-color: #1BD760;
+    box-shadow: 20px -7px #354db9;
+    background-color: #0b1541;
     border-radius: 50%;
     content: "";
     display: inline-block;
@@ -153,7 +163,7 @@ header{
 
 
 .circle-big-right{
-    box-shadow: -20px 5px #0d8037;
+    box-shadow: -20px 5px #e0514c;
     right: -25em;
     top: -1em;
     width: 37.4em;
@@ -171,6 +181,7 @@ header{
 
 
 .circle-small-left{
+    box-shadow: 20px -7px #dce470fd;
     overflow: hidden;
     left: -7em;
     bottom: 10em;
@@ -193,9 +204,9 @@ header{
 footer{
     background-color: black;
     position: absolute;
-    bottom: -40em;
+    bottom: -20em;
     width: 100%;
-    height: 40em;
+    height: 20em;
     color: white;
 }
 
@@ -391,13 +402,8 @@ footer p{
         font-size: 1em;
     }
 }
+  
 
-@media(max-height: 2000){
-    body{
-        zoom: 150%;
-        background: red;
-    }
-}
 
 /*Keyframes*/
 
@@ -463,4 +469,6 @@ footer p{
         width:30px
     }
 }
+
+
 
