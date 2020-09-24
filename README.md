@@ -1,2 +1,2 @@
-# Spotify-Landing-Page-Recreation
-A recreation of the Spotify landing page with some small alterations
+# Porfolio
+A website that can serve as my online portfolio
