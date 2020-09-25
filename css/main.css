@@ -89,9 +89,6 @@ header{
     display: inline-block;
 }
 
-.decoration{
-    content: "|";
-}
 
 .menu-small{
     display: none;
@@ -144,7 +141,7 @@ footer p{
         background-color: black;
         right: 0;
         padding-right:4em;
-        height: 30em;
+        height: 12em;
         font-size: xx-large;
         top:1.4em;
         text-align: left;
