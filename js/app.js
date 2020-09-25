@@ -3,7 +3,8 @@ const navSmall = document.getElementById("menu-small");
 const menuTop = document.getElementById("menu-top");
 const menuMiddle = document.getElementById("menu-middle");
 const menuBottom = document.getElementById("menu-bottom");
-const decoration = document.getElementById("decoration");
+const navBig = document.getElementById("nav-menu");
+const middleSection = document.getElementById("middle-section");
 
 
 
@@ -15,6 +16,8 @@ function menuOpen(){
         menuBottom.style.animationName = "menu-animation-bottom";
         menuMiddle.style.opacity = "0";
         navSmall.style.display = "block";
+        middleSection.style.filter = "brightness(40%)";
+        document.body.style.overflow = "hidden";
         
     /*Closed*/
     }else{
@@ -23,9 +26,26 @@ function menuOpen(){
         menuMiddle.style.animationName = "menu-animation-middle-reverse";
         menuBottom.style.animationName = "menu-animation-bottom-reverse";
         navSmall.style.display = "none";
+        middleSection.style.filter = "brightness(100%)";
+        document.body.style.overflow = "scroll";
+    }
+}
+
+function resize(){
+    /*If Menu-small is open when the screen is bigger than 900px it should reset*/
+    if(screen.width > 900){
+        menuMiddle.style.opacity = "1"; 
+        menuTop.style.animationName = "menu-animation-top-reverse";
+        menuMiddle.style.animationName = "menu-animation-middle-reverse";
+        menuBottom.style.animationName = "menu-animation-bottom-reverse";
+        navSmall.style.display = "none";
+        middleSection.style.filter = "brightness(100%)";
+        document.body.style.overflow = "scroll";
     }
 }
 
 
+
 menu.addEventListener("click", function(){menuOpen(); })
+window.addEventListener("resize", function(){resize();});
 
