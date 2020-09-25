@@ -1,3 +1,2 @@
 # Portfolio
-
-A website that can serve as my online portfolio
+https://etobiasl.github.io/Portfolio/
