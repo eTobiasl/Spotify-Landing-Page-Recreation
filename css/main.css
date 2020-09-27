@@ -70,6 +70,17 @@ header{
     display: none;
 }
 
+.menu div{
+    display: block;
+    right: 3em;
+    content: "";
+    margin-bottom: .3em;
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: white;
+}
+
 .menu-top{
     animation-duration: .5s;
     animation-fill-mode: forwards;  
@@ -92,13 +103,38 @@ header{
 
 .menu-small{
     display: none;
-    animation-duration: .1s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
+    position: absolute;
+    background-color: black;
+    right: 0;
+    padding-right:4em;
+    padding-top: 2em;
+    font-size: xx-large;
+    top:1.4em;
+    text-align: left;
+    height: 100vh;
+    width: 12vw;
 }
 
+/*Middle section*/
 
-
-
+.middle-section{
+    overflow: hidden;
+    background-color: #1a296d;
+    color: black;
+    margin-top: 0;
+    position: absolute;
+    padding-bottom: 15em;
+    top: 5.2em;
+    width: 100%;
+    bottom:0em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
 
 
 /*Bottom section*/ 
@@ -135,33 +171,11 @@ footer p{
         display: none;
     }
 
-    .menu-small{
-        display: none;
-        position: absolute;
-        background-color: black;
-        right: 0;
-        padding-right:4em;
-        height: 12em;
-        font-size: xx-large;
-        top:1.4em;
-        text-align: left;
-        width: 30%;
-    }
 
     .nav-menu li:first-of-type{
         margin-top:2em;
     }
 
-    .menu div{
-        display: block;
-        right: 3em;
-        content: "";
-        margin-bottom: .3em;
-        width: 30px;
-        height: 4px;
-        border-radius: 5px;
-        background-color: white;
-    }
 
     .menu{
         position: absolute;
@@ -177,18 +191,14 @@ footer p{
         outline: none;
     }
 
-    #nav-menu{
-        transition-duration: 5s;
-    }
-
-    .flex-header{
-        justify-content: space-evenly;
-        padding-bottom: 4em;
-    }
 
     header{
         align-items: center;
     }  
+
+    .flex-header{
+        padding-bottom: 4em;
+    }
 }
 
 
@@ -291,5 +301,31 @@ footer p{
     }
 }
 
+/*Menu entering animation*/
 
+@keyframes menu-entering {
+    from{
+        margin-right: -30vw;
+        padding-right: 0em;
+        display: none;
+    }
+    to{
+        margin-right: 0;
+        padding-right: 4em;
+        display: block;
+    }
+}
+
+@keyframes menu-entering-reverse {
+    from{
+        margin-right: 0;
+        padding-right: 4em;
+        display: block;
+    }
+    to{
+        margin-right: -30vw;
+        padding-right: 0;
+        display: none;
+    }
+}
 

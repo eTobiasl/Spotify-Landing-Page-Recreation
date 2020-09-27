@@ -14,6 +14,7 @@ function menuOpen(){
         menuTop.style.animationName = "menu-animation-top";
         menuMiddle.style.animationName = "menu-animation-middle";
         menuBottom.style.animationName = "menu-animation-bottom";
+        navSmall.style.animationName = "menu-entering";
         menuMiddle.style.opacity = "0";
         navSmall.style.display = "block";
         middleSection.style.filter = "brightness(40%)";
@@ -25,7 +26,7 @@ function menuOpen(){
         menuTop.style.animationName = "menu-animation-top-reverse";
         menuMiddle.style.animationName = "menu-animation-middle-reverse";
         menuBottom.style.animationName = "menu-animation-bottom-reverse";
-        navSmall.style.display = "none";
+        navSmall.style.animationName = "menu-entering-reverse";
         middleSection.style.filter = "brightness(100%)";
         document.body.style.overflow = "scroll";
     }
@@ -43,6 +44,7 @@ function resize(){
         document.body.style.overflow = "scroll";
     }
 }
+
 
 
 

@@ -1,16 +1,10 @@
-.middle-section h1{
-   padding-top: 10em;
-}
 
-.middle-section{
-    overflow: hidden;
-    background-color: #1a296d;
-    color: #f1f6fd;
-    margin-top: 0;
-    position: absolute;
-    padding-bottom: 15em;
-    top: 5.2em;
-    width: 100%;
-    bottom:0em;
-    text-align: center;
+
+/*Width and height*/
+  
+@media (max-width: 730px) and (max-height: 700px){
+    .graphical-elements div{
+        display: none;
+    }
+
 }
