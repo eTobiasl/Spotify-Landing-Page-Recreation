@@ -1,0 +1,28 @@
+
+.paper-airplane{
+    width: 2em;
+    height: 2em;
+    transform: rotate(15deg);
+    filter: invert(37%) sepia(78%) saturate(180%) hue-rotate(322deg) brightness(89%) contrast(200%);
+}
+
+
+/*Height*/
+
+
+@media (max-height: 640px){
+    .middle-section .paper-airplane{
+        width: 1em;
+        height: 1em;
+    }
+    
+}
+
+/*Width and height*/
+  
+@media (max-width: 615px) and (max-height: 610px){
+    .graphical-elements div{
+        display: none;
+    }
+
+}
