@@ -118,7 +118,7 @@
 
 @media (max-width: 1025px){
     .middle-section h1{
-        font-size: 4em;
+        font-size: 5em;
         letter-spacing: 1px;
         margin-bottom: .7em;
     }
@@ -126,17 +126,12 @@
 
 @media (max-width: 665px){
     .graphical-elements div{
-        margin: -14em;
+        margin: -12em;
     }
     .middle-section h1{
+        font-size: 4em;
         padding-top:0;
         margin-bottom: .7em;
-    }
-}
-
-@media (max-width: 500px){
-    .graphical-elements div{
-        display: none;
     }
 }
 
@@ -192,18 +187,15 @@
     }
 }
 
-@media (max-height: 640px){
-    .middle-section h1{
-        font-size: 4em;
+@media (max-height: 680px){
+    .graphical-elements .circle-big-right{
+        margin: -14em;
     }
 }
 
 @media (max-height: 520px){
-
-    .graphical-elements div{
-        display: none;
-    }
     .middle-section h1{
+        margin-top: 3em;
         font-size: 3em;
     }
     .middle-section p{
@@ -213,10 +205,15 @@
 
 @media (max-height: 420px){
     .middle-section h1{
+        margin-top: 4.5em;
         font-size: 3em;
     }
     .middle-section p{
         font-size: .7em;
+    }
+
+    .graphical-elements div{
+        margin-bottom: -14em;
     }
 
 }

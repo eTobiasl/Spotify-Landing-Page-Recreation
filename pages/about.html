@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/about-contact-portfolio.css">
+    <link rel="stylesheet" href="../css/about.css">
     <link rel="icon" href="/images/profile-picture-circle.png">
 </head>
 <body>
@@ -24,14 +24,14 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li class = "decoration-small" id = "decoration-small">__</li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class = "menu-small-portfolio"><a href="portfolio.html">Portfolio</a></li>
                 </ul>
                 <ul id = "nav-menu" class = "nav-menu">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li class = "decoration" id = "decoration">|</li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class = "nav-menu-portfolio"><a href="portfolio.html">Portfolio</a></li>
                 </ul>
             </nav>
     </div>
@@ -40,7 +40,15 @@
         <div class = "text-wrapper">
             <img src="../images/profile-picture-circle.png" alt="profile picture" class = "about-picture" width =  "100em" height="100em">
             <h1>About me</h1>
-            <p class = "education">Informatics student at University of Oslo</p>
+            <p class = "education">Informatics student at University of Oslo<br>
+                <span>Substitute Informatics Teacher at Oslo Kommune</span></p>
+            <div class="grid-wrapper">
+                <div><img src="../images/html.svg" alt="Html logo"></div>
+                <div><img src="../images/css.svg" alt="css logo"></div>
+                <div><img src="../images/javascript.svg" alt="javascript logo"></div>
+                <div><img src="../images/java.svg" alt="java logo"></div>
+                <div><img src="../images/python.svg" alt="python logo"></div>
+            </div>
         </div>
         <section class = "graphical-elements">
             <div class = "box-small-left"></div>
@@ -50,7 +58,7 @@
         </section>
     </section>
     <footer>
-        <p>Created by Erik Tobias Leirvik</p>
+        <p>© 2020 Erik Tobias Leirvik</p>
     </footer> 
     </body>
     <script src="../js/app.js" type="text/javascript"></script> 
