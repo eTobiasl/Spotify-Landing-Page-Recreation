@@ -3,7 +3,7 @@
     font-size: 200%;
     filter:brightness(90%);
     border-radius: 10px;
-    margin-top: 5em;
+    margin-top: 6em;
     padding: 2em;
     box-shadow: 30px -30px #354db9;
 }
@@ -127,14 +127,7 @@ a{
 @media (max-width: 485px){
     .middle-section .text-wrapper{
         box-shadow: 0 -20px #354db9;
-    }
-    
-}
-
-@media (max-width: 320px){
-    .graphical-elements div{
-        display: none;
-    }
+    }   
 }
 
 
@@ -148,6 +141,10 @@ a{
 }
 
 @media (max-height: 750px){
+
+    .middle-section .text-wrapper{
+        margin-top:8.5em;
+    }
     .graphical-elements div{
         margin: -6em;
     }
@@ -188,5 +185,6 @@ a{
 @media (max-height: 400px){
     .middle-section .text-wrapper{
         box-shadow: 20px 0 #354db9;
+        margin-top: 7.4em;
     }
 }
