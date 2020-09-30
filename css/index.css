@@ -3,11 +3,12 @@
 /*Middle section*/ 
 
 .middle-section{
-    color: #f1f6fd;
+    color: #F8F8FF; /*#f1f6fd*/
 }
   
 
 .middle-section h1{
+    text-shadow: 4px 3px #50646e;
     margin-bottom: .4em;
     margin-left: -2.2em;
     font-size: 8rem;
@@ -22,13 +23,14 @@
 }
 
 .middle-section p{
+    text-shadow: 1px 1px #50646e;
     margin-top: -2em;
 }
 
 
 .portfolio-button{
     text-decoration: none;
-    color: #f1f6fd;
+    color: #F8F8FF;
     background-color: #000000;
     padding: 1em 3em 1em 3em;
     border-radius: 100px;
@@ -41,6 +43,7 @@
     background-color: #354db9;
     outline: none;
 }
+
 
 
 
@@ -139,6 +142,7 @@
     .middle-section h1{
         font-size: 2.5em;
         margin-bottom: 1em;
+        text-shadow: 3px 2px #88aabb;
     }
 
     .middle-section p{
