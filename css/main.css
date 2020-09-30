@@ -46,7 +46,7 @@ header{
 }
 
 .navigation{
-    color: #f1f6fd;
+    color: #F8F8FF;
 }
 
 .navigation li{
@@ -56,13 +56,13 @@ header{
 }
 
 .navigation a{
-    color: #f1f6fd;
+    color: #F8F8FF;
     text-decoration: none;
     outline: none;
 }
 
 .nav-menu-portfolio, .menu-small-portfolio{
-    background-color: #f1f6fd;
+    background-color: #F8F8FF;
     padding: 7px 20px 7px 20px;
     border-radius: 30px;
 }
@@ -97,7 +97,7 @@ header{
     width: 30px;
     height: 4px;
     border-radius: 5px;
-    background-color: #f1f6fd;
+    background-color: #F8F8FF;
 }
 
 .menu-top{
@@ -136,11 +136,11 @@ header{
     width: 12vw;
 }
 
-/*Middle section*/
+/*Middle section*/ /*#5289bd*/ /**/
 
 .middle-section{
     overflow: hidden;
-    background-color: #1a296d;
+    background-color: #A8D2E7;  /*#3b6a96*/
     color: black;
     margin-top: 0;
     position: absolute;
@@ -164,7 +164,7 @@ footer{
     bottom: -6em;
     width: 100%;
     height: 4em;
-    color: #f1f6fd;
+    color: #F8F8FF;
 }
 
 footer p{

@@ -1,11 +1,11 @@
-.middle-section .text-wrapper{
-    background-color: rgb(255, 255, 255);
+.text-wrapper{
+    background-color:#F8F8FF;
     font-size: 200%;
-    filter:brightness(90%);
     border-radius: 10px;
     margin-top: 6em;
     padding: 2em;
     box-shadow: 30px -30px #354db9;
+    border: 6px solid #92b4c2;
 }
 
 a{
@@ -97,7 +97,7 @@ a{
         font-size: .7em;
     }
 
-    .middle-section .text-wrapper{
+    .text-wrapper{
         padding: .7em;
     }
 }
@@ -113,7 +113,7 @@ a{
         font-size: .5em;
     }
 
-    .middle-section .text-wrapper{
+    .text-wrapper{
         padding: .5em;
     }
 
@@ -125,7 +125,7 @@ a{
 }
 
 @media (max-width: 485px){
-    .middle-section .text-wrapper{
+    .text-wrapper{
         box-shadow: 0 -20px #354db9;
     }   
 }
@@ -135,14 +135,14 @@ a{
 
 
 @media (max-height: 770px){
-    .middle-section .text-wrapper{
+    .text-wrapper{
         margin-top:7em;
     }
 }
 
 @media (max-height: 750px){
 
-    .middle-section .text-wrapper{
+    .text-wrapper{
         margin-top:8.5em;
     }
     .graphical-elements div{
@@ -175,7 +175,7 @@ a{
         font-size: .5em;
     }
 
-    .middle-section .text-wrapper{
+    .text-wrapper{
         padding: .5em;
         margin-top:7em;
     }
@@ -183,7 +183,7 @@ a{
 
 
 @media (max-height: 400px){
-    .middle-section .text-wrapper{
+    .text-wrapper{
         box-shadow: 20px 0 #354db9;
         margin-top: 7.4em;
     }
