@@ -16,15 +16,6 @@
     margin-bottom: .2em;
 }
 
-.download{
-    font-size: .7em;
-    background-color:black ;
-    color: white;
-    text-decoration: none;
-    padding: .5em;
-    border-radius: 30px;
-}
-
 /*Media querries*/
   
 @media (max-width: 730px) and (max-height: 700px){
