@@ -5,6 +5,7 @@ const menuMiddle = document.getElementById("menu-middle");
 const menuBottom = document.getElementById("menu-bottom");
 const navBig = document.getElementById("nav-menu");
 const middleSection = document.getElementById("middle-section");
+const footer = document.querySelector("footer");
 
 
 
@@ -18,6 +19,8 @@ function menuOpen(){
         menuMiddle.style.opacity = "0";
         navSmall.style.display = "block";
         middleSection.style.filter = "brightness(40%)";
+        footer.style.filter = "brightness(94%)";
+        middleSection.style.overflowY = "hidden";
         document.body.style.overflow = "hidden";
         
     /*Closed*/
@@ -28,12 +31,14 @@ function menuOpen(){
         menuBottom.style.animationName = "menu-animation-bottom-reverse";
         navSmall.style.animationName = "menu-entering-reverse";
         middleSection.style.filter = "brightness(100%)";
+        footer.style.filter = "brightness(100%)";
         document.body.style.overflow = "scroll";
+        middleSection.style.overflowY = "scroll";
     }
 }
 
 function resize(){
-    /*If Menu-small is open when the screen is bigger than 900px it should reset*/
+    /*If the window is resized Menu-small will close */
     if(screen.width > 900){
         menuMiddle.style.opacity = "1"; 
         menuTop.style.animationName = "menu-animation-top-reverse";
@@ -41,6 +46,7 @@ function resize(){
         menuBottom.style.animationName = "menu-animation-bottom-reverse";
         navSmall.style.display = "none";
         middleSection.style.filter = "brightness(100%)";
+        footer.style.filter = "brightness(100%)";
         document.body.style.overflow = "scroll";
     }
 }

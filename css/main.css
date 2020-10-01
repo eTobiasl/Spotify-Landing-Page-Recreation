@@ -52,6 +52,10 @@ header{
 .navigation li{
     font-weight: bolder;
     display: inline-block;
+    margin-left: 1rem;
+}
+
+.navigation .nav-menu-portfolio{
     margin-left: 2rem;
 }
 
