@@ -66,13 +66,12 @@ footer{
 }
 
 .more{
-    /* border-top: 25px solid white; */
     display: flex;
     content: "";
     width: 100%;
-    height: 70em;
+    height: 75em;
     position: absolute;
-    bottom: -71.2em;
+    bottom: -76.2em;
     background-color: #0b1541;
     justify-content: center;
 }
@@ -87,7 +86,7 @@ footer{
     overflow: hidden;
     background-color: #F8F8FF;
     border-radius: 10px;
-    height: 35em;
+    height: 40em;
     width: 30em;
     margin-top: 4em;
     padding: .5em;
@@ -106,7 +105,7 @@ footer{
 .project-indepth img{
     width: 18em;
     height: 10em;
-
+    margin-bottom: -1em;
 }
 
 .text-wrapper2 .project-image2{
@@ -115,12 +114,22 @@ footer{
 
 .text-wrapper2 .explanation{
     font-size: .8em;
+    margin-top: 1.4em;
 }
 
 .responsive{
     color: #354db9;
 }
 
+.text-wrapper2 .grid-wrapper2 img{
+    margin-top: .4em;
+    width: 2em;
+    height: 2em;
+}
+
+.grid-wrapper2 div{
+    display: inline-block;
+}
 /*Media querries*/
 
 @media (max-width: 1025px){
@@ -225,7 +234,7 @@ footer{
         height: 25em;
     }
     .more{
-        height: 55em;
+     height: 55em;
         bottom: -55em;
     }
 }

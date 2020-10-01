@@ -26,7 +26,7 @@ header{
 }
 
 .logo-picture{
-    clip-path: circle(47.9% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
     position: absolute;
     left: 2em;
     width: 60px;
@@ -61,11 +61,6 @@ header{
     outline: none;
 }
 
-.nav-menu-portfolio, .menu-small-portfolio{
-    background-color: #F8F8FF;
-    padding: 7px 20px 7px 20px;
-    border-radius: 30px;
-}
 
 .nav-menu-portfolio a, .menu-small-portfolio a{
     color: black;
@@ -75,15 +70,26 @@ header{
     padding-right: 5em;
 }
 
-.navigation .menu-small-portfolio{
-    margin-left: -1rem;
-}
 
+
+.navigation a, .navigation a{
+    background-color: black;
+    padding: 7px 20px 7px 20px;
+    border-radius: 30px;
+}
 
 .navigation a:hover, .navigation a:focus{
-    color: #354db9;
+    color: #F8F8FF;
+    background-color: #364DB8;
+    padding: 7px 20px 7px 20px;
+    border-radius: 30px;
 }
 
+.nav-menu-portfolio a, .menu-small-portfolio a{
+    background-color: #F8F8FF;
+    padding: 7px 20px 7px 20px;
+    border-radius: 30px;
+}
 
 .menu{
     display: none;
@@ -127,20 +133,21 @@ header{
     position: absolute;
     background-color: black;
     right: 0;
-    padding-right:4em;
+    padding-right:10em;
     padding-top: 2em;
-    font-size: xx-large;
+    font-size: 2em;
     top:1.4em;
-    text-align: left;
+    text-align: center;
     height: 100vh;
-    width: 12vw;
+    width: 14vw;
 }
 
-/*Middle section*/ /*#5289bd*/ /**/
+
+/*Middle section*/ 
 
 .middle-section{
     overflow: hidden;
-    background-color: #A8D2E7;  /*#3b6a96*/
+    background-color: #A8D2E7; 
     color: black;
     margin-top: 0;
     position: absolute;
@@ -159,9 +166,10 @@ header{
 /*Bottom section*/ 
 
 footer{
-    background-color: black;
+    background-color: #0b1541;
     position: absolute;
-    bottom: -6em;
+    padding-top: -10em;
+    bottom: -4em;
     width: 100%;
     height: 4em;
     color: #F8F8FF;
@@ -251,6 +259,12 @@ footer p{
         font-size: 1em;
     }
 }
+
+@media (max-width: 550px){
+    .menu-small{
+        width: 24vw;
+    }
+}
   
 
 
@@ -323,7 +337,7 @@ footer p{
 
 @keyframes menu-entering {
     from{
-        margin-right: -30vw;
+        margin-right: -33vw;
         padding-right: 0em;
         display: none;
     }
@@ -341,7 +355,7 @@ footer p{
         display: block;
     }
     to{
-        margin-right: -30vw;
+        margin-right: -33vw;
         padding-right: 0;
         display: none;
     }
