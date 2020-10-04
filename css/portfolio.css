@@ -1,6 +1,4 @@
-.middle-section{
-    overflow-y: scroll;
-}
+
 
 .grid-wrapper{
     grid-template-rows: 1fr 1fr;
@@ -14,6 +12,10 @@
     height: 9em;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.grid-wrapper2{
+    margin-top: .4em;
 }
 
 .project1{
@@ -78,13 +80,13 @@ footer{
     display: none;
 }
 
-.more{
+.more-section{
     display: flex;
     content: "";
     width: 100%;
     height: 75em;
     position: absolute;
-    bottom: -76.2em;
+    bottom: -75em;
     background-color: #0b1541;
     justify-content: center;
 }
@@ -96,7 +98,8 @@ footer{
 
 .text-wrapper2{
     display: flex;
-    overflow: hidden;
+    text-align: center;
+    overflow: scroll;
     background-color: #F8F8FF;
     border-radius: 10px;
     height: 40em;
@@ -132,7 +135,6 @@ footer{
 }
 
 .text-wrapper2 .grid-wrapper2 img{
-    margin-top: .4em;
     width: 2em;
     height: 2em;
 }
@@ -166,16 +168,18 @@ footer{
    }
 
    .project .project-image{
-       width: 4.5em;
-       height: 2.5em;
-   }
+        width: 4.5em;
+        height: 2.5em;
+    }
+    
+    .text-wrapper2 .grid-wrapper2 img{
+        width: 1.5em;
+        height: 1.5em;
+    }
 
-
-   .project .project-image2{
-    width: 4.5em;
-    height: 2.5em;
-}
-
+    .grid-wrapper2{
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 730px) and (max-height: 700px){
@@ -210,6 +214,15 @@ footer{
         width: 10em;
         height: 5.5em;
     
+    }
+
+    .text-wrapper2 .grid-wrapper2 img{
+        width: 1em;
+        height: 1em;
+    }
+    .grid-wrapper2{
+        margin-top: -.3em;
+        margin-bottom: 1em;
     }
 }
 
@@ -267,7 +280,7 @@ footer{
     .text-wrapper2{
         height: 25em;
     }
-    .more{
+    .more-section{
      height: 55em;
         bottom: -55em;
     }
