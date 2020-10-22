@@ -41,7 +41,6 @@
 
 .grid-wrapper img{
     width: 9em;
-    height: 5em;
     margin-bottom: -1em;
 }
 .project-name p{
@@ -51,7 +50,6 @@
 
 .github img, .website img{
     width: 40px;
-    height: 40px;
 }
 
 .link-wrapper{
@@ -69,7 +67,6 @@
 
 .below img{
     width: 3em;
-    height: 3em;
 }
 
 footer{
@@ -120,7 +117,6 @@ footer{
 
 .project-indepth img{
     width: 18em;
-    height: 10em;
     margin-bottom: -1em;
 }
 
@@ -136,7 +132,6 @@ footer{
 
 .text-wrapper2 .grid-wrapper2 img{
     width: 2em;
-    height: 2em;
 }
 
 
@@ -174,7 +169,6 @@ footer{
     
     .text-wrapper2 .grid-wrapper2 img{
         width: 1.5em;
-        height: 1.5em;
     }
 
     .grid-wrapper2{
@@ -212,13 +206,11 @@ footer{
 
     .project-indepth img{
         width: 10em;
-        height: 5.5em;
     
     }
 
     .text-wrapper2 .grid-wrapper2 img{
         width: 1em;
-        height: 1em;
     }
     .grid-wrapper2{
         margin-top: -.3em;
@@ -248,7 +240,6 @@ footer{
 
     .below img{
         width: 2em;
-        height: 2em;
     }
 }
 
@@ -259,7 +250,6 @@ footer{
 
     .below img{
         width: 2em;
-        height: 2em;
     }
 }
 
@@ -316,7 +306,6 @@ footer{
     }
 
     .github img, .website img{
-        height: 1em;
         width: 1em;
     }
 
